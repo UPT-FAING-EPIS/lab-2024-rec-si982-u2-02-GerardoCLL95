@@ -28,6 +28,8 @@
     aws_secret_access_key=....
     aws_session_token=......
     ```
+    ![image](https://github.com/user-attachments/assets/bb6bc13b-8b0b-4c9d-a521-2693b7a25e5d)
+
     1. Iniciar la aplicación Powershell o Windows Terminal en modo administrador
     2. En el terminal, ejecutar el siguiente comando para crear la carpeta y archivos de conexion a AWS
     ```Powershell
@@ -40,12 +42,16 @@
     notepad $env:USERPROFILE\.aws\credentials
     ```
     > Pegar los valores previamente obtenidos CLOUD ACCESS - AWS CLI y guardar los cambios en el archivos
+    ![image](https://github.com/user-attachments/assets/e1c81308-f464-4304-8a9d-2d3175293483)
+
     4. En el terminal, ejecutar el siguiente comando para editar el archivo de configuracion.
     ```Powershell
     notepad $env:USERPROFILE\.aws\config
     ```
     > Pegar el siguiente contenido y guardar los cambios.
     ```
+    ![image](https://github.com/user-attachments/assets/4733dbc8-4a07-44c3-a982-5336403dfec5)
+
     [default]
     region=us-east-1
     ```
@@ -71,6 +77,7 @@ dotnet add package Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdap
 dotnet tool install -g dotnet-ef --version 8.0.0
 dotnet tool install -g dotnet-aspnet-codegenerator --version 8.0.0
 ```
+![image](https://github.com/user-attachments/assets/25e7c473-4d3c-4301-9dc7-73f54521b13a)
 
 3. Abrir Visual Studio Code y elegir la carpeta del proyecto, dentro del proyecto Financiera.WebApp, crear la carpeta Modelos, y dentro de esta crear los siguientes archivos con lo siguientes contenidos:
 > Cliente.cs
@@ -112,6 +119,8 @@ public class Cliente
 
 }
 ```
+![image](https://github.com/user-attachments/assets/b47ce4b3-253c-4203-bee6-e5909dddc06b)
+
 > CuentaAhorro.cs
 ```CSharp
 namespace Financiera.WebApp.Modelos;
@@ -200,6 +209,8 @@ public class CuentaAhorro
     }
 }
 ```
+![image](https://github.com/user-attachments/assets/59a48e11-f6a8-4c42-b964-57901cf9e358)
+
 > MovimientoCuenta.cs
 ```CSharp
 namespace Financiera.Dominio.Modelos;
