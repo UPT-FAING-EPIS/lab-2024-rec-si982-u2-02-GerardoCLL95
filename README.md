@@ -77,6 +77,7 @@ dotnet add package Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdap
 dotnet tool install -g dotnet-ef --version 8.0.0
 dotnet tool install -g dotnet-aspnet-codegenerator --version 8.0.0
 ```
+![image](https://github.com/user-attachments/assets/25e7c473-4d3c-4301-9dc7-73f54521b13a)
 
 3. Abrir Visual Studio Code y elegir la carpeta del proyecto, dentro del proyecto Financiera.WebApp, crear la carpeta Modelos, y dentro de esta crear los siguientes archivos con lo siguientes contenidos:
 > Cliente.cs
@@ -118,6 +119,8 @@ public class Cliente
 
 }
 ```
+![image](https://github.com/user-attachments/assets/b47ce4b3-253c-4203-bee6-e5909dddc06b)
+
 > CuentaAhorro.cs
 ```CSharp
 namespace Financiera.WebApp.Modelos;
