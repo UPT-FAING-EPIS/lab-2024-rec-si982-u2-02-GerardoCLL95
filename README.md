@@ -28,6 +28,8 @@
     aws_secret_access_key=....
     aws_session_token=......
     ```
+    ![image](https://github.com/user-attachments/assets/bb6bc13b-8b0b-4c9d-a521-2693b7a25e5d)
+
     1. Iniciar la aplicación Powershell o Windows Terminal en modo administrador
     2. En el terminal, ejecutar el siguiente comando para crear la carpeta y archivos de conexion a AWS
     ```Powershell
