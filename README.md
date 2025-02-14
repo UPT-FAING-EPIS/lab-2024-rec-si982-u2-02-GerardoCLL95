@@ -209,6 +209,8 @@ public class CuentaAhorro
     }
 }
 ```
+![image](https://github.com/user-attachments/assets/59a48e11-f6a8-4c42-b964-57901cf9e358)
+
 > MovimientoCuenta.cs
 ```CSharp
 namespace Financiera.Dominio.Modelos;
