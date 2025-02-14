@@ -50,6 +50,8 @@
     ```
     > Pegar el siguiente contenido y guardar los cambios.
     ```
+    ![image](https://github.com/user-attachments/assets/4733dbc8-4a07-44c3-a982-5336403dfec5)
+
     [default]
     region=us-east-1
     ```
