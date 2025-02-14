@@ -42,6 +42,8 @@
     notepad $env:USERPROFILE\.aws\credentials
     ```
     > Pegar los valores previamente obtenidos CLOUD ACCESS - AWS CLI y guardar los cambios en el archivos
+    ![image](https://github.com/user-attachments/assets/e1c81308-f464-4304-8a9d-2d3175293483)
+
     4. En el terminal, ejecutar el siguiente comando para editar el archivo de configuracion.
     ```Powershell
     notepad $env:USERPROFILE\.aws\config
