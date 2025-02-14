@@ -1,4 +1,7 @@
 using Financiera.WebApp.Components;
+using Financiera.WebApp;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+string connectionString = builder.Configuration.GetConnectionString("FinancieraBD")??"";
+builder.Services.AddDbContext<FinancieraContexto>(
+    opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+);
+builder.Services.AddQuickGridEntityFrameworkAdapter();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

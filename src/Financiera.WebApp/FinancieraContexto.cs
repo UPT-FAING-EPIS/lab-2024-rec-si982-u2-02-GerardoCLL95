@@ -10,8 +10,18 @@ public class FinancieraContexto : DbContext
     // INICIO: Comentar o eliminar esta seccion luego de la migracion
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+        //optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+        if (!optionsBuilder.IsConfigured)
+        {
+            var configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            string connectionString = configuration.GetConnectionString("FinancieraBD") ?? "";
+            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+        }
     }
+    public FinancieraContexto(DbContextOptions<FinancieraContexto> options) : base(options) { }
     // FIN
     /// <summary>
     /// Conjunto de datos cliente
@@ -41,4 +51,5 @@ public class FinancieraContexto : DbContext
         modelBuilder.ApplyConfiguration(new Mapeos.CuentaAhorroConfiguracion());
         modelBuilder.ApplyConfiguration(new Mapeos.MovimientoCuentaConfiguracion());
     } 
+ 
 }

@@ -1,4 +1,4 @@
-namespace Financiera.Dominio.Modelos;
+namespace Financiera.WebApp.Modelos;
 /// <summary>
 /// Clase de WebApp que representa el movimientos de la cuenta
 /// </summary>
