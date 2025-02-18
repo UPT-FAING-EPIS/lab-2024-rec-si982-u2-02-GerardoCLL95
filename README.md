@@ -520,6 +520,7 @@ cd ..
 ```
 eb open
 ```
+![image](https://github.com/user-attachments/assets/39eb14e7-bb37-40de-8b4e-8a48ac0f1c64)
 
 ---
 ## Actividades Encargadas
